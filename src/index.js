@@ -17,5 +17,8 @@ app.get('/colocacoes', (req, res) => {
 app.get('/contato', (req, res) => {
     res.sendFile(__dirname + "/contato.html");
 })
+app.use((req, res, next) => {
+    res.status(404).sendFile(__dirname + "/404.html")
+})
 
-app.listen('3000');
+app.listen(process.env.PORT || '3000');
