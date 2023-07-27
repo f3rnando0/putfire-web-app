@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="./index.css"">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="/static/js/index.js"></script>
+    <title>Putfire</title>
+    <link rel="icon" type="image/x-icon" href="/static/assets/favicon.ico">
+  </head>
+  <body class="bg-neutral-200">
+    <header>
+        <nav class="bg-white border-gray-200 px-4 lg:px-6 py-2.5">
+            <div class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
+                <a href="/" class="flex items-center">
+                    <img src="/static/assets/image_64.png" class="mr-3 h-6 sm:h-9" alt="PUTFIRE" />
+                    <span class="self-center text-xl font-semibold whitespace-nowrap">PUTFIRE</span>
+                </a>
+                <div>
+                  <button data-collapse-toggle="mobile-menu-2" onclick="menu('open')" type="button" class="inline-flex items-center p-2 ml-1 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-neutral-200 dark:text-gray-400 dark:hover:bg-neutral-200 dark:focus:ring-neutral-200" aria-controls="mobile-menu-2" aria-expanded="false">
+                      <span class="sr-only">Open main menu</span>
+                      <svg id="openIcon" class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
+                      <svg id="closeIcon" class="hidden w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                  </button>
+              </div>
+                <div class="hidden justify-between items-center w-full lg:flex lg:w-auto lg:order-1" id="mobile-menu-2">
+                    <ul class="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0">
+                        <li>
+                            <a href="/" class="block py-2 pr-4 pl-3 text-gray-700 rounded bg-primary-700 lg:bg-transparent lg:hover:text-gray-600 lg:p-0" aria-current="page">HOME</a>
+                        </li>
+                        <li>
+                            <a href="/line" class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-gray-600 lg:p-0">LINE</a>
+                        </li>
+                        <li>
+                            <a href="/colocacoes" class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-gray-600 lg:p-0">COLOCAÇÕES</a>
+                        </li>
+                        <li>
+                            <a href="/contato" class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-gray-600 lg:p-0">CONTATO</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main
+      class="mx-auto max-w-screen-xl"
+    >
+      <div class="pt-8">
+        <span class="test text-4xl max-sm:text-3xl max-sm:pl-4">COLOCAÇÕES</span>
+      </div>
+      <div>
+        <div>
+            <div class="flex flex-row items-center pt-6 max-sm:pl-2">
+                <img
+                src="/static/assets/valorant.jpg"
+                class="mr-3 h-14 sm:h-14"
+                alt="VALORANT"
+              />
+              <div class="flex flex-col">
+                <span class="text-2xl text-line max-sm:text-base">GOAT VALORANT CUP 2023 - 2° lugar</span>
+                <div class="flex items-center gap-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="1.25em" viewBox="0 0 512 512">
+                        <path d="M400 0c17.7 0 32 14.3 32 32V50.2c12.5 2.3 24.7 6.4 36.2 12.1l10.1 5.1c15.8 7.9 22.2 27.1 14.3 42.9s-27.1 22.2-42.9 14.3l-10.2-5.1c-9.9-5-20.9-7.5-32-7.5h-1.7c-29.8 0-53.9 24.1-53.9 53.9c0 22 13.4 41.8 33.9 50l52 20.8c44.7 17.9 74.1 61.2 74.1 109.4v3.4c0 51.2-33.6 94.6-80 109.2V480c0 17.7-14.3 32-32 32s-32-14.3-32-32V460.6c-15-3.5-29.4-9.7-42.3-18.3l-23.4-15.6c-14.7-9.8-18.7-29.7-8.9-44.4s29.7-18.7 44.4-8.9L361.2 389c10.8 7.2 23.4 11 36.3 11c27.9 0 50.5-22.6 50.5-50.5v-3.4c0-22-13.4-41.8-33.9-50l-52-20.8C317.3 257.4 288 214.1 288 165.9C288 114 321.5 70 368 54.2V32c0-17.7 14.3-32 32-32zM0 64C0 46.3 14.3 32 32 32h80c79.5 0 144 64.5 144 144c0 58.8-35.2 109.3-85.7 131.7l51.4 128.4c6.6 16.4-1.4 35-17.8 41.6s-35-1.4-41.6-17.8L106.3 320H64V448c0 17.7-14.3 32-32 32s-32-14.3-32-32V288 64zM64 256h48c44.2 0 80-35.8 80-80s-35.8-80-80-80H64V256z"/>
+                    </svg>
+                    <span class="text-lg">1.200</span>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

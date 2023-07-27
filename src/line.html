@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="./index.css"">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="/static/js/index.js"></script>
+    <link rel="icon" type="image/x-icon" href="/static/assets/favicon.ico">
+    <title>Putfire</title>
+  </head>
+  <body class="bg-neutral-200">
+    <header>
+      <nav class="bg-white border-gray-200 px-4 lg:px-6 py-2.5">
+        <div
+          class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl"
+        >
+          <a href="/" class="flex items-center">
+            <img
+              src="/static/assets/image_64.png"
+              class="mr-3 h-6 sm:h-9"
+              alt="PUTFIRE"
+            />
+            <span class="self-center text-xl font-semibold whitespace-nowrap"
+              >PUTFIRE</span
+            >
+          </a>
+          <div>
+            <button data-collapse-toggle="mobile-menu-2" onclick="menu('open')" type="button" class="inline-flex items-center p-2 ml-1 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-neutral-200 dark:text-gray-400 dark:hover:bg-neutral-200 dark:focus:ring-neutral-200" aria-controls="mobile-menu-2" aria-expanded="false">
+                <span class="sr-only">Open main menu</span>
+                <svg id="openIcon" class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
+                <svg id="closeIcon" class="hidden w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+            </button>
+        </div>
+          <div
+            class="hidden justify-between items-center w-full lg:flex lg:w-auto lg:order-1"
+            id="mobile-menu-2"
+          >
+            <ul
+              class="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0"
+            >
+              <li>
+                <a
+                  href="/"
+                  class="block py-2 pr-4 pl-3 text-gray-700 rounded bg-primary-700 lg:bg-transparent lg:hover:text-gray-600 lg:p-0"
+                  aria-current="page"
+                  >HOME</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/line"
+                  class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-gray-600 lg:p-0"
+                  >LINE</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/colocacoes"
+                  class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-gray-600 lg:p-0"
+                  >COLOCAÇÕES</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/contato"
+                  class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-gray-600 lg:p-0"
+                  >CONTATO</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main
+      class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl"
+    >
+      <div class="pt-8">
+        <span class="test text-4xl max-sm:text-3xl max-sm:pl-4">LINEUPS</span>
+        <div class="pt-10">
+          <div class="valorant max-sm:pl-4">
+            <div class="flex items-center">
+              <img
+                src="/static/assets/valorant.jpg"
+                class="mr-3 h-11 sm:h-11"
+                alt="VALORANT"
+              />
+              <span class="text-2xl logo-line text-gray-700">VALORANT</span>
+            </div>
+            <div class="grid grid-cols-5 gap-4 pt-8 max-sm:gap-2">
+              <div class="flex items-center flex-col cursor-pointer">
+                <img
+                  src="/static/assets/defautl.png"
+                  class="mr-3 h-18 sm:h-18"
+                  alt="astro"
+                />
+                <span class="text-2xl font-semibold pt-2 max-sm:text-base"
+                  >ASTRO</span
+                >
+              </div>
+              <div class="flex items-center flex-col cursor-pointer">
+                <img
+                  src="/static/assets/defautl.png"
+                  class="mr-3 h-18 sm:h-18"
+                  alt="proud"
+                />
+                <span class="text-2xl font-semibold pt-2 max-sm:text-base"
+                  >PROUD</span
+                >
+              </div>
+              <div class="flex items-center flex-col cursor-pointer">
+                <img
+                  src="/static/assets/defautl.png"
+                  class="mr-3 h-18 sm:h-18"
+                  alt="schinas"
+                />
+                <span class="text-2xl font-semibold pt-2 max-sm:text-base"
+                  >SCHINAS</span
+                >
+              </div>
+              <div class="flex items-center flex-col cursor-pointer">
+                <img
+                  src="/static/assets/defautl.png"
+                  class="mr-3 h-18 sm:h-18"
+                  alt="astro"
+                />
+                <span class="text-2xl font-semibold pt-2 max-sm:text-base"
+                  >NINGUEM TA PURO</span
+                >
+              </div>
+              <div class="flex items-center flex-col cursor-pointer">
+                <img
+                  src="/static/assets/defautl.png"
+                  class="mr-3 h-18 sm:h-18"
+                  alt="astro"
+                />
+                <span class="text-2xl font-semibold pt-2 max-sm:text-base"
+                  >KING</span
+                >
+              </div>
+            </div>
+          </div>
+          <div class="csgo pt-10 max-sm:pl-4 max-sm:pt-20">
+            <div class="flex items-center">
+              <img
+                src="/static/assets/csgo.jpg"
+                class="mr-3 h-11 sm:h-11"
+                alt="CSGO"
+              />
+              <span class="text-2xl logo-line text-gray-700">CS:GO</span>
+            </div>
+            <div class="grid grid-cols-5 gap-4 pt-8 max-sm:gap-2">
+              <div class="flex items-center flex-col cursor-pointer">
+                <img
+                  src="/static/assets/defautl.png"
+                  class="mr-3 h-18 sm:h-18"
+                  alt="astro"
+                />
+                <span class="text-2xl font-semibold pt-2 max-sm:text-base"
+                  >BORIN</span
+                >
+              </div>
+              <div class="flex items-center flex-col cursor-pointer">
+                <img
+                  src="/static/assets/defautl.png"
+                  class="mr-3 h-18 sm:h-18"
+                  alt="proud"
+                />
+                <span class="text-2xl font-semibold pt-2 max-sm:text-base"
+                  >SUCH</span
+                >
+              </div>
+              <div class="flex items-center flex-col cursor-pointer">
+                <img
+                  src="/static/assets/defautl.png"
+                  class="mr-3 h-18 sm:h-18"
+                  alt="schinas"
+                />
+                <span class="text-2xl font-semibold pt-2 max-sm:text-base"
+                  >PROUD</span
+                >
+              </div>
+              <div class="flex items-center flex-col cursor-pointer">
+                <img
+                  src="/static/assets/defautl.png"
+                  class="mr-3 h-18 sm:h-18"
+                  alt="astro"
+                />
+                <span class="text-2xl font-semibold pt-2 max-sm:text-base"
+                  >LIMA</span
+                >
+              </div>
+              <div class="flex items-center flex-col cursor-pointer">
+                <img
+                  src="/static/assets/defautl.png"
+                  class="mr-3 h-18 sm:h-18"
+                  alt="astro"
+                />
+                <span class="text-2xl font-semibold pt-2 max-sm:text-base"
+                  >KETTLES</span
+                >
+              </div>
+            </div>
+          </div>
+          <div class="staff"></div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
